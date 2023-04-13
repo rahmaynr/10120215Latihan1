@@ -1,160 +1,1033 @@
 <?xml version="1.0" encoding="utf-8"?>
- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xml:app="http://schemas.android.com/apk/res-auto"
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@color/putihtulang"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:background="#E5E5E5"
-     android:orientation="vertical"
-     android:padding="16dp">
- </LinearLayout>
 
 
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="150dp"
-     android:layout_marginLeft="16dp"
-     android:layout_marginRight="16dp"
-     android:layout_marginTop="20dp"
-     android:background="#E6F6EC"
-     android:orientation="vertical"
-     android:padding="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundgreen"
+        android:layout_width="343dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="DigiTeam"
-      android:textSize="16sp"
-      android:textStyle="bold"/>
-
-  <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Digital Together Everyone Achieve More">
-
-  </TextView>
-
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Jabar Digital Service"
-       android:textSize="12sp"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-  <ImageView
-      android:layout_width="48dp"
-      android:layout_height="48dp"
-      android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/digiteam"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
 
- </LinearLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/digital_together_everyone_achieve_more"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
- <RelativeLayout
-     android:layout_width="343dp"
-     android:layout_height="95dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/jabar_digital_service"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
- <TextView
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:text="Dias Eka Ferdianto,S.KOM,B.IT"
-     android:textStyle="bold"
-     android:textSize="16sp"
-     android:layout_marginStart="110dp"
-     android:layout_marginTop="200dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
- <ImageView
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:src="@drawable/orang"
-     android:layout_marginStart="16dp"
-     android:layout_marginTop="200dp"/>
-
- <TextView
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:text="UI Designer"
-     android:layout_marginStart="110dp"
-     android:layout_marginTop="230dp"/>
-</RelativeLayout>
-
- <LinearLayout
-     android:layout_width="355dp"
-     android:layout_height="250dp"
-     android:layout_marginLeft="16dp"
-     android:layout_marginTop="310dp"
-     android:layout_marginRight="16dp"
-     android:background="@color/white"
-     android:orientation="vertical"
-     android:padding="16dp">
-
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="16dp"/>
-
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="JAM KERJA BULAN INI"
-      android:textSize="20sp"
-      android:textStyle="bold"/>
-
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Jam kerja kamu bulan ini:130.53 Jam"
-      android:layout_marginTop="16dp"
-      android:textColor="#0D47A1"
-      android:textSize="14sp"
-      android:textStyle="bold"/>
-
-  <Button
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:backgroundTint="#069550"
-      android:text="130.53 JAM"
-      android:layout_margin="3dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fotouser"
+        android:layout_width="343dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundgreen">
 
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Batas Minimum Jam Kerja 170 Jam/Bulan"
-       android:textSize="12sp"/>
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageView1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/orang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/Dias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/dias_eka_fredianto_s_kom_b_it"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="@+id/imageView1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/ui_designer"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/Dias"
+            app:layout_constraintTop_toBottomOf="@+id/Dias" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jamkerja"
+        android:layout_width="343dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fotouser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fotouser"
+        app:layout_constraintTop_toBottomOf="@+id/fotouser">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="303dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/jam_kerja_bulan_ini"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/jam_kerja_kamu_bulan_ini_130_53_jam"
+            android:textColor="@color/biru"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/Green"
+            android:text="@string/_130_53_jam"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/batasmin"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/batas_minimum_jam_kerja_170_jam_bulan"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <Button
+            android:id="@+id/checkin"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Hijauu"
+            android:text="Checkin"
+            android:textAllCaps="False"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/batasmin"
+            app:layout_constraintTop_toBottomOf="@+id/batasmin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/laporankamu"
+        android:layout_width="343dp"
+        android:layout_height="416dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/jamkerja"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/jamkerja"
+        app:layout_constraintTop_toBottomOf="@+id/jamkerja"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/laporan"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/laporan_kamu"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/maret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/maret"
+            android:textColor="@color/Ijotua"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/laporan"
+            app:layout_constraintTop_toBottomOf="@+id/laporan" />
+
+        <TextView
+            android:id="@+id/April"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/april"
+            android:textColor="@color/Ijotua"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/maret"
+            app:layout_constraintTop_toBottomOf="@+id/laporan" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/laporanmaret"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintEnd_toStartOf="@+id/laporanmaret2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maret">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/laporanmaret2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/laporanmaret"
+            app:layout_constraintTop_toTopOf="@+id/laporanmaret" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/laporanmaret2"
+            app:layout_constraintTop_toBottomOf="@+id/maret" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak3"
+            app:layout_constraintTop_toTopOf="@+id/kotak3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak5"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak4"
+            app:layout_constraintTop_toTopOf="@+id/kotak4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak6"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/laporanmaret" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak7"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kotak6"
+            app:layout_constraintTop_toBottomOf="@+id/laporanmaret2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak8"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/kotak7"
+            app:layout_constraintTop_toBottomOf="@+id/kotak3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak9"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/kotak8"
+            app:layout_constraintTop_toBottomOf="@+id/kotak4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak10"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak9"
+            app:layout_constraintTop_toBottomOf="@+id/kotak5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak11"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak6" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak12"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak11"
+            app:layout_constraintTop_toBottomOf="@+id/kotak7" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak13"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak4"
+            app:layout_constraintStart_toEndOf="@+id/kotak12"
+            app:layout_constraintTop_toBottomOf="@+id/kotak8" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak14"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak13"
+            app:layout_constraintTop_toBottomOf="@+id/kotak9" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak15"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak4"
+            app:layout_constraintStart_toEndOf="@+id/kotak14"
+            app:layout_constraintTop_toBottomOf="@+id/kotak10" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak16"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak11" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak17"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak3"
+            app:layout_constraintStart_toEndOf="@+id/kotak16"
+            app:layout_constraintTop_toBottomOf="@+id/kotak12" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak18"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak4"
+            app:layout_constraintStart_toEndOf="@+id/kotak17"
+            app:layout_constraintTop_toBottomOf="@+id/kotak13" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak19"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toEndOf="@+id/kotak18"
+            app:layout_constraintTop_toBottomOf="@+id/kotak14" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak20"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak19"
+            app:layout_constraintTop_toBottomOf="@+id/kotak15" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak21"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak16" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak22"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toEndOf="@+id/kotak21"
+            app:layout_constraintTop_toBottomOf="@+id/kotak17" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak23"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toEndOf="@+id/kotak22"
+            app:layout_constraintTop_toBottomOf="@+id/kotak18" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak24"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak23"
+            app:layout_constraintTop_toBottomOf="@+id/kotak19" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak25"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak24"
+            app:layout_constraintTop_toBottomOf="@+id/kotak20" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak26"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak21" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak27"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak26"
+            app:layout_constraintTop_toBottomOf="@+id/kotak22" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak28"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak27"
+            app:layout_constraintTop_toBottomOf="@+id/kotak23" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak29"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak28"
+            app:layout_constraintTop_toBottomOf="@+id/kotak24" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak30"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toEndOf="@+id/kotak29"
+            app:layout_constraintTop_toBottomOf="@+id/kotak25" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotak31"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak26" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kotakApril"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak5"
+            app:layout_constraintTop_toBottomOf="@+id/April" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotakApril"
+            app:layout_constraintTop_toBottomOf="@+id/April" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/April_1"
+            app:layout_constraintTop_toTopOf="@+id/April_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_2"
+            app:layout_constraintTop_toTopOf="@+id/April_2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_3"
+            app:layout_constraintTop_toTopOf="@+id/April_3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_6"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak10"
+            app:layout_constraintTop_toBottomOf="@+id/kotakApril" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_7"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_6"
+            app:layout_constraintTop_toBottomOf="@+id/April_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_8"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/April_7"
+            app:layout_constraintTop_toBottomOf="@+id/April_2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_9"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_8"
+            app:layout_constraintTop_toBottomOf="@+id/April_3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_10"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/April_9"
+            app:layout_constraintTop_toBottomOf="@+id/April_4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_11"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak5"
+            app:layout_constraintStart_toEndOf="@+id/kotak15"
+            app:layout_constraintTop_toBottomOf="@+id/April_6" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_12"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/April_11"
+            app:layout_constraintTop_toBottomOf="@+id/April_7" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_13"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/April_12"
+            app:layout_constraintTop_toBottomOf="@+id/April_8" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_14"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_13"
+            app:layout_constraintTop_toBottomOf="@+id/April_9" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_15"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/kotak2"
+            app:layout_constraintStart_toEndOf="@+id/April_14"
+            app:layout_constraintTop_toBottomOf="@+id/April_10" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_16"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/kotak20"
+            app:layout_constraintTop_toBottomOf="@+id/April_11" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_17"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak7"
+            app:layout_constraintStart_toEndOf="@+id/April_16"
+            app:layout_constraintTop_toBottomOf="@+id/April_12" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_18"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak7"
+            app:layout_constraintStart_toEndOf="@+id/April_17"
+            app:layout_constraintTop_toBottomOf="@+id/April_13" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_19"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak7"
+            app:layout_constraintStart_toEndOf="@+id/April_18"
+            app:layout_constraintTop_toBottomOf="@+id/April_14" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_20"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak6"
+            app:layout_constraintStart_toEndOf="@+id/April_19"
+            app:layout_constraintTop_toBottomOf="@+id/April_15" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_21"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintStart_toEndOf="@+id/kotak25"
+            app:layout_constraintTop_toBottomOf="@+id/April_16" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_22"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_21"
+            app:layout_constraintTop_toBottomOf="@+id/April_17" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_23"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_24"
+            app:layout_constraintTop_toBottomOf="@+id/April_20" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_24"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_25"
+            app:layout_constraintTop_toBottomOf="@+id/April_19" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_25"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_22"
+            app:layout_constraintTop_toBottomOf="@+id/April_18" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_26"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/kotak30"
+            app:layout_constraintTop_toBottomOf="@+id/April_21" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_27"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_26"
+            app:layout_constraintTop_toBottomOf="@+id/April_22" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_28"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_27"
+            app:layout_constraintTop_toBottomOf="@+id/April_25" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_29"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_28"
+            app:layout_constraintTop_toBottomOf="@+id/April_24" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/April_30"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/putih"
+            app:layout_constraintStart_toEndOf="@+id/April_29"
+            app:layout_constraintTop_toBottomOf="@+id/April_23" />
+
+        <Button
+            android:id="@+id/buttonlaporan"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/Ijo"
+            android:text="@string/buat_laporan"
+            android:textAllCaps="False"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotak31" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="173dp"
+        android:background="@drawable/baseline_supervisor_account_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Checkin"
-        android:backgroundTint="#069550"
-        android:layout_margin="3dp"/>
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="303dp"
+        android:src="@drawable/izin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laporankamu"/>
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:background="#E5E5E5"
-      android:orientation="vertical"
-      android:padding="16dp">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="177dp"
+        android:src="@drawable/booking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"/>
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="16dp"
-       android:layout_marginLeft="16dp"
-       android:layout_marginTop="16dp"
-       android:layout_marginEnd="16dp"
-       android:layout_marginBottom="16dp"
-       android:text="LAPORAN KAMU"
-       android:textColor="@color/black"
-       android:textSize="20sp"
-       android:textStyle="bold" />
-  </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="307dp"
+        android:src="@drawable/agenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
 
- </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="297dp"
+        android:layout_marginEnd="57dp"
+        android:src="@drawable/laporan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6"/>
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="59dp"
+        android:src="@drawable/wiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"/>
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/izin"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="156dp"
+        android:text="@string/kehadiran"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/laporan"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="294dp"
+        android:text="@string/agenda"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/wiki"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/booking"
+        android:textColor="@color/Abuabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
